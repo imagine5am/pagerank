@@ -189,7 +189,7 @@ int Table::read_file(const string &filename) {
     } else {
       infile = new ifstream(filename.c_str());
       if (!infile) {
-          error("Cannot open file", filename.c_str());
+          error("Cannot open file in table.cpp", filename.c_str());
       }
     }
     
@@ -445,4 +445,23 @@ const void Table::print_pagerank_v() {
         sum += pr[i];
     }
     cerr << "s = " << sum << " " << endl;
+}
+
+const void Table::print_pagerank_v(ofstream& fout) {
+
+    size_t i;
+    size_t num_rows = pr.size();
+    double sum = 0;
+    
+    fout.precision(numeric_limits<double>::digits10);
+
+    for (i = 0; i < num_rows; i++) {
+        if (!numeric) {
+            fout << idx_to_nodes[i] << " = " << pr[i] << endl;
+        } else {
+            fout << i << " = " << pr[i] << endl;
+        }
+        sum += pr[i];
+    }
+    fout << "s = " << sum << " " << endl;
 }

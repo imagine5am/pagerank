@@ -262,4 +262,9 @@ public:
      * and also outputs the index number of each vector, starting from zero.
      */
     const void print_pagerank_v();
+
+    /* This function is added by me.
+     * It outputs the result to the file using fout.
+     */
+    const void print_pagerank_v(ofstream& fout);
 };
