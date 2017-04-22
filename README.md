@@ -8,7 +8,7 @@ The 'graphs' folder consists of all the input graphs. 'all-graphs.txt' consists 
 
 To add graphs to be calculate pagerank, add the graph file to 'graphs' folder and add its entry in 'all-graphs.txt'.
 
-The graph file consists of <p><from><delim><to></p>. The delim is a space(' ') character.
+The graph file consists of <pre><from><delim><to></pre>. The delim is a space(' ') character.
 
 <h1>Building:</h1>
 To build the file:
