@@ -4,7 +4,7 @@ The Pagerank implementation does not belong to me.
 
 The project uses OpenMP to parallelize the code.
 
-The 'graphs' folder consists of all the input graphs. 'all-graphs.txt' consists of all the filenames. The pagerank of all the files and stored in folder './graphs/results'. 
+The 'graphs' folder consists of all the input graphs. './graphs/all-graphs.txt' consists of all the filenames. The pagerank of all the files are stored in folder './graphs/results/'. 
 
 To add graphs to be calculate pagerank, add the graph file to 'graphs' folder and add its entry in 'all-graphs.txt'.
 
