@@ -8,13 +8,13 @@ The 'graphs' folder consists of all the input graphs. 'all-graphs.txt' consists 
 
 To add graphs to be calculate pagerank, add the graph file to 'graphs' folder and add its entry in 'all-graphs.txt'.
 
-The graph file consists of <pre><from><delim><to></pre>. The delim is a space(' ') character.
+The graph file consists of &lt;from&gt;&lt;delim&gt;&lt;to&gt;. The delim is a space(' ') character.
 
 <h1>Building:</h1>
 To build the file:
 
-g++ -o pagerank -fopenmp runPagerank.cpp table.cpp table.h
+<code>g++ -o pagerank -fopenmp runPagerank.cpp table.cpp table.h</code>
 
 To run the program:
 
-./pagerank ./graphs/all-graphs.txt
+<code>./pagerank ./graphs/all-graphs.txt</code>
