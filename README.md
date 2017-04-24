@@ -14,7 +14,7 @@ The graph file consists of &lt;from&gt;&lt;delim&gt;&lt;to&gt;. The delim is a s
 <h1>Building:</h1>
 To build the file:
 
-<code>g++ -o pagerank -fopenmp runPagerank.cpp table.cpp table.h</code>
+<code>g++ -o pagerank -fopenmp -std=c++11 runPagerank.cpp table.cpp table.h</code>
 
 To run the program:
 
